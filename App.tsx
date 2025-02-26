@@ -1,20 +1,19 @@
 import { Alert, StyleSheet, Text, View } from 'react-native';
 import Header from './app/components/Header';
-import Calculadora1 from './app/screens/Calculadora1';
 import Footer from './app/components/Footer';
-import CafeFlat from './app/screens/CafeFlat';
+import ClimaView from './app/screens/ClimaView';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header Titulo='Calculadora basica'
-      nombre='MTI. Luis Alberto Mendoza '
-      imagen={require('./assets/myAvatar.png')}/>
+      <Header Titulo='App clima'
+        nombre='Javier Hernandez'
+        imagen={require('./assets/myAvatar.png')} />
 
-      <CafeFlat/>
+        <ClimaView />{/*Importamos el screen */}
 
-      <Footer Gruppo='5"A"' Fecha='18/02/2025'/>
-      
+      <Footer Gruppo='5"A"' Fecha='25/02/2025' />
+
     </View>
   );
 }
